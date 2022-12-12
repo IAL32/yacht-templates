@@ -1,0 +1,27 @@
+[
+    {
+        "type": 1,
+        "title": "OpenBooks",
+        "name": "openbooks",
+        "description": "Openbooks allows you to download ebooks from irc.irchighway.net quickly and easily.",
+        "logo": "https://raw.githubusercontent.com/IAL32/yacht-templates/main/images/openbooks.png",
+        "image": "evanbuss/openbooks:latest",
+        "categories": [
+          "Other",
+          "Books"
+        ],
+        "platform": "linux",
+        "restart_policy": "unless-stopped",
+        "ports": [
+          {
+            "WebUI": "8100:80/tcp"
+          }
+        ],
+        "volumes": [
+          {
+            "container": "/books",
+            "bind": "!config/OpenBooks"
+          }
+        ]
+      }
+]
