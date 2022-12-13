@@ -86,15 +86,14 @@ services:
     # logo: "path/to/logo"
     items:
       - name: "Yacht"
-        # Alternatively a fa icon can be provided:
-        icon: "fab fa-sailboat"
+        icon: "fas fa-sailboat"
         subtitle: "Manage Docker deployments"
         tag: "app"
         keywords: "self hosted docker" # optional keyword used for searching purpose
         url: "http://192.168.0.130:8000/"
         target: "_blank"
       - name: "OpenBooks"
-        icon: "fab fa-book-open-cover"
+        icon: "fas fa-book-open-cover"
         subtitle: "Download E-Books"
         tag: "app"
         url: "http://192.168.0.130:8100/"
